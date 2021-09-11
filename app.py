@@ -4,7 +4,7 @@ import requests
 # initial app configuration
 app = Flask(__name__)
 
-pages = ["pokemon", "moves", "type"]
+pages = ["pokemon", "move", "type"]
 
 """
 A página inicial do aplicativo da web.
