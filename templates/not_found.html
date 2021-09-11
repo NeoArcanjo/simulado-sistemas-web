@@ -1,33 +1,15 @@
 {% extends "base.html" %}
 
-{% block title %}{{title}}{% endblock %}
+{% block title %}Home{% endblock %}
 
 {% block head %}
 {{ super() }}
 {% endblock %}
 
-{% block search %}
-{{ super() }}
-{% endblock %}
 
 {% block content %}
 
-<div class="py-4 bg-light">
-    <div class="container">
-        <div class="card-columns">
-            {% for pokemon in results %}
-            <!-- inicio do padrao de repetição -->
-
-            {% with pokemon=pokemon %}
-                {% include 'pokecard.html' %}
-            {% endwith %}
-
-            <!-- fim do padrao de repetição -->
-            {% endfor %}
-
-        </div>
-    </div>
-</div>
+Tem isso aqui nao
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

@@ -17,42 +17,27 @@
 
             <img class="card-img-top" src="{{ result.sprites.other.dream_world.front_default }}" style="width: 80vw;
                     height: 80vh;">
-        </div>
-    </div>
 
-    <!-- Row -->
+            <div class="py-4 bg-light">
+                <div class="container">
+                    <div class="card-columns">
 
-    <div class="container">
-        <div class="card-columns">
+                        {% for move in result.moves %}
+                        {% with move=move %}
+                        {% include 'movecard.html' %}
+                        {% endwith %}
+                        {% endfor %}
 
-        </div>
-    </div>
 
-    <div class="col-md-4 p-3">
-        <div class="card box-shadow">
-
-            <div class="card-body">
-                <ul class="left" style="list-style-position: none;">
-                    {% for move in result.moves %}
-                    <li class="card-text">
-                        <a href="{{ move.move.url}}" class="flex">{{ move.move.name }}</a>
-                    </li>
-                    {% endfor %}
-                </ul>
-
-                <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div> <small class="text-muted">9 mins</small>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+</main>
 
-    <!-- Row -->
-    {% endblock %}
+{% endblock %}
 
-    {% block footer %}
+{% block footer %}
 
-    {% endblock %}
+{% endblock %}
