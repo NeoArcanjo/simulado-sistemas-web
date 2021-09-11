@@ -1,0 +1,8 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+venv/
+ref/
+app.db
+
+config.py
+config.cfg

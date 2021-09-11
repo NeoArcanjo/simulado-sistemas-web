@@ -1,0 +1,10 @@
+<div class="card text-center mx-auto" style="max-width: 18rem;" key={{move.id}}>
+    <div class="card-header"><b><a href="/move/{{move.name}}/detail">{{move.name}}</a></b></div>
+    <div class="card-body">
+        <h6 class="card-subtitle mb-2 text-muted">Id: {{move.id}}</h6>
+        <h6 class="card-subtitle mb-2 text-muted">Height: {{move.height}}</h6>
+        <h6 class="card-subtitle mb-2 text-muted">Weight: {{move.weight}}</h6>
+        <img src={{move.sprites.front_default}} />
+        <img src={{move.sprites.back_default}} />
+    </div>
+</div>

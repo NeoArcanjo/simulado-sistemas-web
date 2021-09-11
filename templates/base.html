@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>{% block head %}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="Rafael Arcanjo">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='wireframe.css') }}">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link rel="shortcut icon" href="#">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <title>{% block title %}{% endblock %} - Pokédex </title> {% endblock %} <div class="collapse bg-dark"
+    id="navbarHeader">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7 py-4">
+          <h4>Sobre</h4>
+          <p class="text-info">Brincando com pokemons</p>
+        </div>
+        <div class="col-md-3 offset-md-1 py-4">
+          <h4>Contato</h4>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#" class="text-secondary">links do template q vou ajustar um dia</a>
+            </li>
+            <li>
+              <a href="#" class="text-secondary">links do template q vou ajustar um dia</a>
+            </li>
+            <li>
+              <a href="#" class="text-secondary">links do template q vou ajustar um dia</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-dark bg-dark">
+    <div class="container d-flex justify-content-between">
+      <a href="#" class="navbar-brand d-flex align-items-center">
+        <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+        <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+        <i class="fa mr-4"><svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 1024 1024">
+            <path id="pkmn-go-menu" fill="#000000" stroke="none" stroke-width="1" d="M 512.00,359.18
+                 C 512.00,359.18 512.00,359.18 512.00,359.18
+                   596.40,359.18 664.81,427.60 664.82,512.00
+                   664.82,512.00 664.82,512.00 664.82,512.00
+                   664.82,596.40 596.40,664.81 512.00,664.82
+                   512.00,664.82 512.00,664.82 512.00,664.82
+                   427.60,664.82 359.19,596.40 359.18,512.00
+                   359.18,512.00 359.18,512.00 359.18,512.00
+                   359.18,427.60 427.60,359.18 512.00,359.18
+                   512.00,359.18 512.00,359.18 512.00,359.18
+                   512.00,359.18 512.00,359.18 512.00,359.18 Z
+                 M 512.00,410.12
+                 C 455.73,410.12 410.12,455.73 410.12,512.00
+                   410.12,568.27 455.73,613.88 512.00,613.88
+                   568.27,613.88 613.88,568.27 613.88,512.00
+                   613.88,455.73 568.27,410.12 512.00,410.12
+                   512.00,410.12 512.00,410.12 512.00,410.12 Z
+                 M 806.16,217.84
+                 C 884.17,295.86 928.00,401.67 928.00,512.00
+                   928.00,622.33 884.17,728.14 806.16,806.16
+                   728.14,884.17 622.33,928.00 512.00,928.00
+                   401.67,928.00 295.86,884.17 217.84,806.16
+                   139.83,728.14 96.00,622.33 96.00,512.00
+                   96.00,401.67 139.83,295.86 217.84,217.84
+                   295.86,139.83 401.67,96.00 512.00,96.00
+                   622.33,96.00 728.14,139.83 806.16,217.84 Z
+                 M 332.02,512.00
+                 C 332.02,512.00 138.45,512.00 138.45,512.00
+                   138.45,611.07 177.81,706.09 247.86,776.14
+                   317.91,846.19 412.93,885.55 512.00,885.55
+                   611.07,885.55 706.09,846.19 776.14,776.14
+                   846.19,706.09 885.55,611.07 885.55,512.00
+                   885.55,512.00 885.55,512.00 885.55,512.00
+                   885.55,512.00 691.98,512.00 691.98,512.00
+                   691.98,412.60 611.40,332.02 512.00,332.02
+                   412.60,332.02 332.02,412.60 332.02,512.00 Z" />
+          </svg></i><strong>Pokédex</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"> <span
+          class="navbar-toggler-icon"></span> </button>
+    </div>
+  </div>
+  <div class="py-5" style="">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <form class="form-inline">
+            <div class="input-group">
+              <div class="input-group-append"><button class="btn btn-primary" type="button"><i
+                    class="fa fa-search"></i></button></div><input type="search" class="form-control form-control-lg"
+                id="inlineFormInputGroup" placeholder="Busca">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="text-center py-5">
+    <div class="container">
+      <div class="row my-5 justify-content-center">
+        <div class="col-md-9">
+          <h1>Pokédex</h1>
+          <p class="lead text-muted">Sem ideias a essa hora</p>
+          <a href="#" class="btn btn-primary m-2">Descrever ações possiveis aqui</a>
+          <a href="#" class="btn btn-secondary m-2">Pegar todos</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-4 bg-light">
+    <div class="container">
+      <div class="row">
+
+        {% block content %}
+        {% endblock %}
+
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <footer>
+    <div class="container py-5"> {% block footer %}{% endblock %} <div class="col-6 col-md">
+        <h5>About</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="/information">Privacy and Resources</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>I would love your feedback!</h5>
+        <ul class="list-unstyled text-small">
+          <li class="text-muted">
+            <i class="fa fa-map-marker"></i>
+          </li>
+          <li class="text-muted">
+            <i class="fa fa-envelope"></i> neoarcanjo@ucl.br
+          </li>
+          <li class="text-muted">
+            <i class="fas fa-user-tie"></i> Rafael Arcanjo
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <pingendo onclick="window.open('https://pingendo.com/', '_blank')"
+    style="cursor:pointer;position: fixed;bottom: 20px;right:20px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:220px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">
+    Made with Pingendo Free&nbsp;&nbsp;<img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block"
+      alt="Pingendo logo" height="16"></pingendo>
+</body>
+
+</html>
