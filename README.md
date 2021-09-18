@@ -16,9 +16,9 @@ Em uma concessionária existem os seguintes veículos:
 Você deverá projetar um Web App capaz de listar os carros com sua quilometragem e valor.
 Para isto:
 
-- [ ] Crie o template para a interface - 3 pontos
-- [ ] Crie o backend com as informações acima (use listas) – 3 pontos
-- [ ] Crie a rotina FrontEnd que percorra e exiba os itens corretamente – 3 pontos
+- [x] Crie o template para a interface - 3 pontos
+- [x] Crie o backend com as informações acima (use listas) – 3 pontos
+- [x] Crie a rotina FrontEnd que percorra e exiba os itens corretamente – 3 pontos
 - [ ] Criatividade e visual – 1 Ponto
 
 Envio: arquivo app.py e o template HTML pelo Classroom APENAS.

@@ -1,10 +1,11 @@
-<div class="card text-center mx-auto" style="max-width: 18rem;" key={{pokemon.id}}>
-    <div class="card-header"><b><a href="/pokemon/{{pokemon.name}}/detail" >{{pokemon.name}}</a></b></div>
+<div class="card text-center mx-auto" style="max-width: 50rem;" key={{car.id}}>
+    <div class="card-header"><b><a href="https://www.google.com/search?q={{car.nome}}+{{car.ano}}" target="_blank">{{car.nome}}</a></b></div>
     <div class="card-body">
-        <h6 class="card-subtitle mb-2 text-muted">Id: {{pokemon.id}}</h6>
-        <h6 class="card-subtitle mb-2 text-muted">Height: {{pokemon.height}}</h6>
-        <h6 class="card-subtitle mb-2 text-muted">Weight: {{pokemon.weight}}</h6>
-        <img src={{pokemon.sprites.front_default}} />
-        <img src={{pokemon.sprites.back_default}} />
+        <h6 class="card-subtitle mb-2 text-muted">Nome: {{car.nome}}</h6>
+        <h6 class="card-subtitle mb-2 text-muted">Ano: {{car.ano}}</h6>
+        <h6 class="card-subtitle mb-2 text-muted">Kilometragem: {{car.km}} Km</h6>
+        <h6 class="card-subtitle mb-2 text-muted">Valor: R$ {{"{0:.2f}".format(car.valor)}}</h6>
+        <img src="{{car.img_frente}}" width="100rem" height=""/>
+        <img src="{{car.img_traseira}}" width="100rem" height="" />
     </div>
 </div>
